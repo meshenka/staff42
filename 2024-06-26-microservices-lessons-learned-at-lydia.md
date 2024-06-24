@@ -53,6 +53,7 @@ Microservices help scale your organization, not really your application.
 * Metrics: Prometheus
 * Alerting
 * Distributed Tracing: Open Telemetry
+* Tag your releases in your dashboards
 
 ### Build Microservice backbone first
 
