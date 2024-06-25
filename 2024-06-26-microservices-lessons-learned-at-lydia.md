@@ -9,10 +9,10 @@
 About me:
 
 * ENSI Mecanical Engineer
-* Aeronautical Engineer at Aerospatiale
-* Progiciel for car industry plant installation
-* Web Agency
-* Lydia Solutions
+* Aeronautical Engineer @ Aerospatiale
+* Progiciel for car industry plant installation @PSA
+* Web Agency CTO @ Ecedi
+* Currently @ Lydia Solutions
 
 ## The Lydia story
 
@@ -40,11 +40,11 @@ From payment between friends to Neobanking
   * 5-10 deployments/day
   * ~45 backend engineers
 
-NOTE: We learned microservices the hard way!
-
 ## Lessons learned
 
 Let's review **4 years** of hot takes :D
+
+NOTE: We learned microservices the hard way!
 
 ### Consider your tradeoffs
 
@@ -54,31 +54,34 @@ Let's review **4 years** of hot takes :D
   * memory and CPU exhaust,
   * network links breaks,
   * DB goes unavailable
+* Polyglot is a lie
 
 Microservices help scale **your organization**, not really your application.
 
 ### Observability is King
 
 * Consolidated logs: ELK
-* Metrics: Prometheus
-* Alerting
-* Distributed Tracing: Open Telemetry
+* Metrics & Alerting: Prometheus
+* **Distributed Tracing**: Open Telemetry
 * Tag your releases in your dashboards
 
 ### Build Microservice backbone first
 
-* Tooling, deployment flow
+* Tooling, deployment/rollback flows, ...
+* API Gateway
 * Solid CI/CD
 * Event Publisher/Consumer for asynchronous interservices communication
-* Feature Flipping
+* **Feature Flags**
 * Shared features should be asynchronous microservices
+  * notifications
+  * emails
 
 ### Coupling is your enemy
 
 Study your domains boundaries very carefully.
 
-* Chatty services is a symptom of wrong boundaries
-* Service Synchronous coupling is to avoid at all costs
+* **Chatty services** is a symptom of wrong boundaries
+* Service **Synchronous coupling** is to avoid at all costs
   * You want other services data as local projections from PubSub,
     so work on your projection setup
 
@@ -93,3 +96,4 @@ Because Backward Compatibility Breaks will happen.
 
 * Should you do Microservices? **You probably do not**
 * Dont do it if you dont have experienced engineers to help
+* Train your team
