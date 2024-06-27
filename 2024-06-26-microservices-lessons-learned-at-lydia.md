@@ -46,6 +46,9 @@ Let's review **4 years** of hot takes :D
 
 NOTE: We learned microservices the hard way!
 
+/!\ I am no authority on microservices,
+this is just opinions
+
 ### Consider your tradeoffs
 
 * **Scalability vs Concistency**: transactional is hard
@@ -97,3 +100,5 @@ Because Backward Compatibility Breaks will happen.
 * Should you do Microservices? **You probably do not**
 * Dont do it if you dont have experienced engineers to help
 * Train your team
+
+[Presentation: https://github.com/meshenka/staff42/blob/main/2024-06-26-microservices-lessons-learned-at-lydia.md]
